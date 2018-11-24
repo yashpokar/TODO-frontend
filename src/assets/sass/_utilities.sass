@@ -1,0 +1,24 @@
+@keyframes growUnderLine
+	0%
+		width: 0
+
+	100%
+		width: 150px
+
+.smooth-animated-underline::after
+	display: block
+	margin: auto
+	margin-top: 10px
+	content: ""
+	width: 150px
+	border-bottom: 3px solid #333
+	animation: growUnderLine 800ms ease-in-out
+
+.text-center
+	text-align: center
+
+.text-uppercase
+	text-transform: uppercase
+
+.mt-50
+	margin-top: 50px

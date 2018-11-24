@@ -1,0 +1,43 @@
+.form
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.input-box
+	padding-left: 10px !important
+	padding-right: 10px !important
+
+	&.has-error
+		border-color: red !important
+
+		& + .input-error
+			color: red !important
+
+.input-error
+	padding: 5px
+	font-size: .85rem
+
+.button
+	margin-top: 20px
+	cursor: pointer
+	color: #fafafa
+	background: #000
+	text-transform: uppercase
+
+.button,
+.input-box
+	padding: 8px 0
+	letter-spacing: 1.1px
+	border-radius: 5px
+	font-size: 1.2rem
+	border: 2px solid #eee
+	width: 380px
+
+	&:focus
+		outline: none
+		border-color: #ddd
